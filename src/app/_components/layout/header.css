@@ -1,0 +1,465 @@
+/* =========================================
+   RESTAURANT ACCOUNT
+========================================= */
+
+.restaurant-account {
+  position: relative !important;
+
+  display: flex !important;
+  align-items: center !important;
+
+  z-index: 999999999 !important;
+
+  pointer-events: auto !important;
+
+  isolation: isolate !important;
+}
+
+/* =========================================
+   PROFILE BUTTON
+========================================= */
+
+.restaurant-account-btn {
+  display: flex !important;
+  align-items: center !important;
+
+  gap: 9px !important;
+
+  border: none !important;
+  outline: none !important;
+
+  background: transparent !important;
+
+  padding: 5px 8px !important;
+  margin: 0 !important;
+
+  color: #ffffff !important;
+
+  cursor: pointer !important;
+
+  font-family: inherit !important;
+
+  position: relative !important;
+
+  z-index: 999999999 !important;
+
+  pointer-events: auto !important;
+}
+
+/* =========================================
+   ROUND AVATAR
+========================================= */
+
+.account-avatar {
+  width: 42px !important;
+  height: 42px !important;
+
+  min-width: 42px !important;
+
+  border-radius: 50% !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  background: #d4a23c !important;
+
+  color: #ffffff !important;
+
+  font-size: 16px !important;
+  font-weight: 600 !important;
+
+  border: 2px solid rgba(255, 255, 255, 0.25) !important;
+
+  transition: 0.2s ease !important;
+
+  pointer-events: none !important;
+}
+
+.restaurant-account-btn:hover .account-avatar {
+  transform: scale(1.05);
+}
+
+/* =========================================
+   NAME
+========================================= */
+
+.account-name {
+  color: #ffffff !important;
+
+  font-size: 14px !important;
+  font-weight: 500 !important;
+
+  max-width: 100px !important;
+
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+
+  pointer-events: none !important;
+}
+
+/* =========================================
+   ARROW
+========================================= */
+
+.account-arrow {
+  color: #ffffff !important;
+
+  font-size: 9px !important;
+
+  margin-left: 2px !important;
+
+  pointer-events: none !important;
+}
+
+/* =========================================
+   DROPDOWN
+========================================= */
+
+.restaurant-account-dropdown {
+  position: absolute !important;
+
+  top: calc(100% + 14px) !important;
+  right: 0 !important;
+
+  width: 270px !important;
+
+  background: #ffffff !important;
+
+  border-radius: 12px !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid #eeeeee !important;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2) !important;
+
+  z-index: 2147483647 !important;
+
+  animation: accountDropdown 0.15s ease-out !important;
+
+  pointer-events: auto !important;
+
+  visibility: visible !important;
+
+  opacity: 1 !important;
+
+  transform-origin: top right !important;
+}
+
+/* =========================================
+   DROPDOWN ANIMATION
+========================================= */
+
+@keyframes accountDropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   PROFILE TOP
+========================================= */
+
+.account-profile {
+  display: flex !important;
+  align-items: center !important;
+
+  gap: 12px !important;
+
+  padding: 18px !important;
+
+  border-bottom: 1px solid #eeeeee !important;
+
+  background: #ffffff !important;
+
+  pointer-events: auto !important;
+}
+
+/* =========================================
+   DROPDOWN AVATAR
+========================================= */
+
+.dropdown-avatar {
+  width: 42px !important;
+  height: 42px !important;
+
+  min-width: 42px !important;
+
+  border-radius: 50% !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  background: #d4a23c !important;
+
+  color: #ffffff !important;
+
+  font-size: 16px !important;
+  font-weight: 600 !important;
+
+  pointer-events: none !important;
+}
+
+/* =========================================
+   PROFILE TEXT
+========================================= */
+
+.account-profile-info {
+  display: flex !important;
+  flex-direction: column !important;
+
+  gap: 4px !important;
+
+  min-width: 0 !important;
+
+  overflow: hidden !important;
+}
+
+.account-profile strong {
+  color: #222222 !important;
+
+  font-size: 15px !important;
+
+  font-weight: 600 !important;
+
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.account-profile span {
+  color: #888888 !important;
+
+  font-size: 12px !important;
+
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+/* =========================================
+   DROPDOWN ITEMS
+========================================= */
+
+.account-dropdown-item {
+  display: flex !important;
+  align-items: center !important;
+
+  gap: 12px !important;
+
+  width: 100% !important;
+
+  box-sizing: border-box !important;
+
+  padding: 13px 18px !important;
+
+  margin: 0 !important;
+
+  border: none !important;
+
+  outline: none !important;
+
+  background: #ffffff !important;
+
+  color: #333333 !important;
+
+  text-decoration: none !important;
+
+  font-family: inherit !important;
+
+  font-size: 14px !important;
+
+  font-weight: 400 !important;
+
+  text-align: left !important;
+
+  cursor: pointer !important;
+
+  transition: all 0.2s ease !important;
+
+  position: relative !important;
+
+  z-index: 2147483647 !important;
+
+  pointer-events: auto !important;
+}
+
+/* =========================================
+   ITEM ICON
+========================================= */
+
+.account-dropdown-item > span:first-child {
+  width: 20px !important;
+
+  min-width: 20px !important;
+
+  text-align: center !important;
+
+  font-size: 15px !important;
+
+  pointer-events: none !important;
+}
+
+/* =========================================
+   ITEM TEXT
+========================================= */
+
+.account-dropdown-item > span:last-child {
+  pointer-events: none !important;
+}
+
+/* =========================================
+   HOVER
+========================================= */
+
+.account-dropdown-item:hover {
+  background: #f7f7f7 !important;
+
+  color: #d4a23c !important;
+}
+
+/* =========================================
+   DELETE
+========================================= */
+
+.account-dropdown-item.account-delete {
+  color: #e53935 !important;
+}
+
+.account-dropdown-item.account-delete:hover {
+  background: #fff3f3 !important;
+
+  color: #e53935 !important;
+}
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+.account-logout {
+  display: flex !important;
+  align-items: center !important;
+
+  gap: 12px !important;
+
+  width: 100% !important;
+
+  box-sizing: border-box !important;
+
+  padding: 14px 18px !important;
+
+  margin: 0 !important;
+
+  border: none !important;
+
+  border-top: 1px solid #eeeeee !important;
+
+  outline: none !important;
+
+  background: #ffffff !important;
+
+  color: #333333 !important;
+
+  font-family: inherit !important;
+
+  font-size: 14px !important;
+
+  font-weight: 400 !important;
+
+  text-align: left !important;
+
+  cursor: pointer !important;
+
+  transition: all 0.2s ease !important;
+
+  position: relative !important;
+
+  z-index: 2147483647 !important;
+
+  pointer-events: auto !important;
+}
+
+.account-logout:hover {
+  background: #f7f7f7 !important;
+
+  color: #e53935 !important;
+}
+
+.account-logout > span {
+  pointer-events: none !important;
+}
+
+/* =========================================
+   HEADER OVERFLOW FIX
+========================================= */
+
+#header_main,
+#header_main .container,
+#site-header-inner {
+  overflow: visible !important;
+}
+
+.header,
+.header.style-1 {
+  overflow: visible !important;
+}
+
+/* =========================================
+   ACCOUNT RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+  .restaurant-account-dropdown {
+    right: 0 !important;
+    width: 250px !important;
+  }
+
+  .account-name {
+    max-width: 80px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .restaurant-account-dropdown {
+    right: -10px !important;
+    width: 250px !important;
+  }
+
+  .account-name {
+    display: none !important;
+  }
+}
+
+
+/* image css style  */
+/* =========================================
+   PROFILE IMAGE - HEADER
+========================================= */
+
+.restaurant-profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
+
+
+
+
+.restaurant-dropdown-profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
